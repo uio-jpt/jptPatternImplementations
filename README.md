@@ -1,5 +1,5 @@
-Implementation of design patterns with package templtes
-=======================================================
+Implementation of design patterns with package templates
+========================================================
 
 This is an implemenation of the design patterns from the seminal *Design Patterns: Elements of Reusable 
 Object-Oriented Software* book by the "Gang of Four", Gamma et al., from 1994. The implementation is
