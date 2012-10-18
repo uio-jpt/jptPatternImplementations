@@ -1,0 +1,9 @@
+* When converting AspectJ code here to PT code, there is a lot of usage of the MyAspect.aspectOf().method() approach. When converting
+such code to PT, there are typically two choices:
+ - Insert the aspect code into one or more of the participating roles (expressed as classes), e.g. as we have done in the Observer implementation, or,
+ - Create a separate class for handling the responsibilities otherwise left to the aspect itself, as for the CompositeHandler in this example.
+
+* There is also a choice as to whether to keep existing empty marker interfaces, or to turn them into classes and put more logic into them (instead of logic that resides solely in the aspect). When deciding this, one must take into account if the role is likely to be inhabited by one or many classes. If one (or more through inheritance), then a class makes sense. Otherwise, interfaces make more sense. 
+
+
+* PT could really make good use of default implementations for interfaces, so that it would be easier to distribute code to a set of participants with a template.

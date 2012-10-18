@@ -1,0 +1,7 @@
+The pointcut implicitly applies only to the currently executing object (since it is defined within that class). This in contrast to AspectJ.
+
+We can make the Button.clicked() method tabstract, instead of just supplying an empty method to which the advice can bind.
+
+Since we do not keep state in a central aspect, the need for mappings through global hash tables are gone. Typical example:
+ ButtonCommanding.aspectOf().setCommand(button2, com2); in AJ is turned into
+ button2.setCommand(com2); in PT

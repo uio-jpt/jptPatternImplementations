@@ -1,0 +1,16 @@
+A lot of the aspects seems to have little to do with AOP in the 
+traditional sense (e.g. taking care of crosscutting concerns), 
+and more to do with the retroactive assignment (and, potentially, 
+implementation) of roles to classes.
+
+This pattern depends on being able to supply default implementations for interfaces. 
+This is currently not possible in PT, but would be very useful. With the advent of
+Java 8, this would be resolved. Currently, we are stuck with putting implementation
+into a single template class, which limits the application to one object per instantiation.
+However, note how, in this and similar cases, that limitation is unimportant, since we 
+can just instantiate multiple times.
+
+
+
+Java 8 in general: type inference might create a large headache for a potential implementation,
+especially in the form that it is implemented in for lambda expressions.

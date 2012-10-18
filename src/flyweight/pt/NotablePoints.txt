@@ -1,0 +1,33 @@
+Bruker ikke aspektet som en egen entitet (har heller ikke muligheten til det). Blir roller tydeligere da?
+
+Se f.eks.:
+
+AspectJ: 
+
+PrintableFlyweight T = 
+	FlyweightImplementation.aspectOf().getPrintableFlyweight('t');
+PrintableFlyweight H = 
+	FlyweightImplementation.aspectOf().getPrintableFlyweight('h');
+PrintableFlyweight I = 
+	FlyweightImplementation.aspectOf().getPrintableFlyweight('i');
+PrintableFlyweight S = 
+	FlyweightImplementation.aspectOf().getPrintableFlyweight('s');
+PrintableFlyweight A = 
+	FlyweightImplementation.aspectOf().getPrintableFlyweight('a');
+PrintableFlyweight E = 
+	FlyweightImplementation.aspectOf().getPrintableFlyweight('e');
+PrintableFlyweight Empty = 
+	FlyweightImplementation.aspectOf().getPrintableFlyweight(' '); 
+
+
+PT:
+
+FlyweightFactory f = new FlyweightFactory();
+
+PrintableFlyweight T = f.getPrintableFlyweight('t');
+PrintableFlyweight H = f.getPrintableFlyweight('h');
+PrintableFlyweight I = f.getPrintableFlyweight('i');
+PrintableFlyweight S = f.getPrintableFlyweight('s');
+PrintableFlyweight A = f.getPrintableFlyweight('a');
+PrintableFlyweight E = f.getPrintableFlyweight('e');
+PrintableFlyweight Empty = f.getPrintableFlyweight(' ');

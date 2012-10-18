@@ -1,0 +1,26 @@
+Added type safety due to removing the need for casts:
+
+AspectJ implementation:
+
+protected void notifyMediator(Colleague c, Mediator m) {
+	Button button = (Button) c;
+	Label  label  = (Label)  m; 
+	if (button == Main.button1) {
+		label.setText("Button1 clicked"); 
+	} else if (button == Main.button2) {
+		label.setText("Button2 clicked");
+	}
+	button.setText("(Done)");
+}
+
+
+PT implementation:
+
+protected void notifyMediator(Label l) {
+	if (this == Main.button1) {
+		label.setText("Button1 clicked"); 
+	} else if (this == Main.button2) {
+		label.setText("Button2 clicked");
+	}
+	button.setText("(Done)");
+}

@@ -1,0 +1,5 @@
+Needs a separate class with statics to handle setting up the chain itself. This is handled by the ...aspectOf() instance in the AJ version.
+
+Default interface implementations would be useful here, to support the default setup by AJ where a Handler will reject a request by default.
+
+The original implementation used pointcuts and advice, we have here used a tabstract method instead (Button.doClick()).
