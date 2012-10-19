@@ -10,6 +10,7 @@ http://www.cs.ubc.ca/labs/spl/projects/aodps.html.
 
 We are grateful to Hannemann and Kiczales for making their source code publicly available.
 
+Compile the code with the JPT compiler: https://github.com/uio-jpt/pt-compiler
 
 LICENSE
 =======
