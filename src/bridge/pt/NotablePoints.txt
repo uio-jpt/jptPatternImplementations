@@ -1,0 +1,4 @@
+In the Java implementation, there is a problem that Screen must be a class (since it has implemented methods). This is solved
+by defining default implementations on interfaces in the AJ version. In PT, we can define the Screen as a class, and still allow
+concrete implementors to be part of a different hierarchy (even though they are not in this example), since we may merge the screen
+class in with the concrete classes instead of inheriting.
