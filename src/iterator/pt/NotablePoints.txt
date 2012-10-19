@@ -1,0 +1,3 @@
+The PT implementation is less tightly coupled than the AJ counterpart, since it utilizes required types to specify 
+the list interface instead of an interface that must be implemented directly (nominally) by the concrete list class.
+Thus, the PT implementation for this pattern is more reusable.

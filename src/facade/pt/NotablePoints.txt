@@ -1,0 +1,1 @@
+We utilize PT capabilities to merge classes, allowing ordinary OO overrides of the Facade implementations. Otherwise not much difference here.
