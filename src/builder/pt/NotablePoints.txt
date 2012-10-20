@@ -4,4 +4,4 @@ to contain fields and method implementations. Consequently, all ConcreteBuilders
 impossible to be part of another class hierarchy.
 	For PT, this can be handled through class merging or several additions to the same class. Note how we create a single template for the
 Creator implementation, CreatorImpl, and let this implementation implement an interface from a package. This way, we can instantiate and
-merge mutliple times without having problems with typing things correctly.
+merge multiple times without having problems with typing things correctly.
