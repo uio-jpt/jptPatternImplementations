@@ -1,0 +1,2 @@
+Utilizes standard PT addition classes to introduce a new method to a template class upon instantiation, in order to make it conform
+to a (typically existing) interface.
