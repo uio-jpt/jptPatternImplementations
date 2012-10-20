@@ -1,3 +1,7 @@
 This pattern utilizes the same approach as we have done in several others: a common interface, and a template class that implements this interface,
 and that is instantiated multiple times, with different additions for the different concrete implementations of the pattern (here FancyGenerator
 and SimpleGenerator).
+
+Again, the problem in the Java version is that the abstract class role of the pattern (here DecoratedStringGenerator) needs to be an actual class
+(since it contains implemented methods and fields) and not an interface (due to the lack of multiple inheritance), and this thus limits what kind 
+of inheritance relationships the classes involved in the pattern can partake in (effectively: none beyond the abstract bass class).
