@@ -1,0 +1,5 @@
+This pattern instance is basically implementing a solution to the Expression problem (even though we only extend with operations and not classes
+here in this example) with AJ/AOP. The same can readily be done with PT as well. The PT version also
+modularizes the code for the addition to each class, and does not tangle it in a common aspect. (The same could probably be done with
+multiple aspects also in AJ). In the PT version, we can also extend the *interface* itself (here BooleanExpression), and not just add 
+methods to the concrete classes. 
