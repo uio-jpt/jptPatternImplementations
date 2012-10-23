@@ -1,0 +1,6 @@
+The AOP implementation uses pointcuts in order to change the state when the queue is updated. This could be done with pointcuts and advice in 
+PT as well, but it is even simpler to do it just with tsuper in adds-classes, as the example shows. The overridden tsuper-methods have a
+much simpler signature, compared to the aspects, as well.
+
+The reason it is equally easy to use tsuper, is that each pointcut really only deals with one kind of method call each, and thus there is no
+real need for AOP features beyond "after that method has executed, do this".
