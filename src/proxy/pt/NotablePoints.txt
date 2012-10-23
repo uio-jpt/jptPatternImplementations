@@ -1,0 +1,14 @@
+The AOP implementation utilizes checks who the caller is through a join point parameter in the advice. This is not supported by the 
+simplistic AOP support in PT (however, it could be done utilizing other means, such as stack introspection).
+
+The PT implementation could be made very similar to the Java implementation, or, as we have done in this example, it can utilize
+addition classes in order to create the proxy, and tsuper in order to forward requests to the actual subject itself.
+
+Another alternative is to use dynamic proxies as supported in standard Java (http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Proxy.html).
+
+
+About the PT implementation:
+ - we don't need a variable to hold the "proxied" subject, since we add overrides directly
+ - we add an implementation of a common interface as a convenience in the main package, primarily for typing issues. (In a language without
+need for explicitly typing variables in left hand side expressions, like C# with "var", this would be unnecessary in this case.)
+ - we do not need to implement methods we do not care to intercept, unlike the Java version. 
