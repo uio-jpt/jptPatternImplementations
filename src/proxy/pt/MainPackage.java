@@ -47,7 +47,6 @@ package MainPackage {
 	     */
 
 		public static void main (String[] args) { 
-			OutputSubject real          = new OutputImplementation();
 			OutputSubject countingProxy = new RequestCounter(); // contains the blocking proxy as well
 
 			System.out.println("\n===> Issuing SAFE request...");		

@@ -6,6 +6,8 @@ addition classes in order to create the proxy, and tsuper in order to forward re
 
 Another alternative is to use dynamic proxies as supported in standard Java (http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Proxy.html).
 
+In the Java version, the proxy ordering is dynamic, while in both PT and AOP/AJ versions, the ordering is static (defined by template
+instantiations and aspect instances, respectively).
 
 About the PT implementation:
  - we don't need a variable to hold the "proxied" subject, since we add overrides directly
