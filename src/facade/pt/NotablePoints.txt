@@ -1,1 +1,5 @@
-We utilize PT capabilities to merge classes, allowing ordinary OO overrides of the Facade implementations. Otherwise not much difference here.
+We utilize PT capabilities to merge classes, allowing ordinary OO overrides of the Facade implementations. 
+
+The AJ implementation utilizes the aspect to warn (at compile time) the users if they are using methods of the encapsulated object directly,
+instead of using the Facade. This is not needed in PT, as the implementation with addition classes will make it impossible to access the
+encapsulated methods without going through the Facade, if it is applied.
