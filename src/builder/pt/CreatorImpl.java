@@ -5,7 +5,7 @@ template CreatorImpl {
 	    /** 
 	     * An inheritable variable that carries the result of the build.
 	     */
-	    public String representation;
+	    String representation;
 	    
 	    /** 
 	     * Defines a <i>buildPart()</i> operation for type parts.
