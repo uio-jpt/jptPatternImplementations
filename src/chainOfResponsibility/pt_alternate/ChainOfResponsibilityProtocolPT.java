@@ -2,8 +2,8 @@ import java.util.WeakHashMap;
 
 template ChainOfResponsibilityProtocolPT {
     
-	
-	/**
+    
+    /**
      * This interface is used by extending aspects to say what types
      * handle requests. It models the <i>Handler</i> role.
      */
@@ -26,29 +26,29 @@ template ChainOfResponsibilityProtocolPT {
          */
         public void handleRequest(Request request);
         
-		public void handleEvent(Request request);
+        public void handleEvent(Request request);
 
     }
 
-	/**
+    /**
      * This interface is used by extending aspects to say what types
      * represent requests. It models the <i>Request</i> role.
      */
     required interface Request { }
 
 
-	/**
-	* Default implementation for handlers
-	*/
+    /**
+    * Default implementation for handlers
+    */
     public class HandlerImpl implements Handler {
         
-		Handler successor;
+        Handler successor;
 
         tabstract public boolean acceptRequest(Request request);
 
-		tabstract public void handleRequest(Request request);
+        tabstract public void handleRequest(Request request);
 
-		public void handleEvent(Request request) {          
+        public void handleEvent(Request request) {          
             if (acceptRequest(request)) {
                 handleRequest(request);
             } else {    
